@@ -1,0 +1,4 @@
+- id: spotless-check
+  entry: spotless-check.sh
+  language: script
+
