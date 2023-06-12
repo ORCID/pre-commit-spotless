@@ -1,4 +1,15 @@
 - id: spotless-check
+  name: spotless-check
   entry: spotless-check.sh
   language: script
+  types_or: [ java , xml ]
   description: Runs spotless:check goal
+
+- id: spotless-apply
+  name: spotless-apply
+  entry: spotless-apply.sh
+  language: script
+  types_or: [ java , xml ]
+  description: Runs spotless:apply goal
+
+

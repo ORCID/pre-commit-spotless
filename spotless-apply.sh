@@ -11,6 +11,6 @@ done
 # https://github.com/ejba/pre-commit-maven/blob/main/pre_commit_maven/utils/maven.py
 export MAVEN_OPTS="-client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Xverify:none "
 
-echo "mvn --batch-mode -f spotless.xml -Dstyle.color=always -DspotlessFiles=$file_list spotless:check" >> /tmp/spotless-check-$user.log
-mvn --batch-mode -f spotless.xml -Dstyle.color=always -DspotlessFiles=$file_list spotless:check
+echo "mvn --batch-mode -f spotless.xml -Dstyle.color=always -DspotlessFiles=$file_list spotless:apply" >> /tmp/spotless-apply-$user.log
+mvn --batch-mode -f spotless.xml -Dstyle.color=always -DspotlessFiles=$file_list spotless:apply
 
